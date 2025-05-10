@@ -44,7 +44,7 @@ const HomeSection = () => {
           </div>
           <div className="md:w-1/2 animate-fade-in-up">
             <div className="relative">
-              <div className="bg-white rounded-xl p-4 md:p-6 shadow-lg">
+              <div className="bg-white rounded-xl p-4 md:p-8 shadow-lg">
                 <img
                   src="./img1.jpg"
                   alt="Front Desk Management Software"
