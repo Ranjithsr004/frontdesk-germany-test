@@ -12,7 +12,7 @@ const HomeSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-frontdesk-800 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold mb-6 text-frontdesk-800 leading-tight">
             {t('home.title')} <br />
               <span className="text-frontdesk-700">{t('home.span')}</span> {t('home.cta')}
             </h1>
@@ -44,7 +44,7 @@ const HomeSection = () => {
           </div>
           <div className="md:w-1/2 animate-fade-in-up">
             <div className="relative">
-              <div className="bg-white rounded-xl p-4 md:p-8 shadow-lg">
+              <div className="bg-white rounded-xl p-4 md:p-6 shadow-lg">
                 <img
                   src="./img1.jpg"
                   alt="Front Desk Management Software"
