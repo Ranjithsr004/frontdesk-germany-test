@@ -90,7 +90,7 @@ const Navigation = () => {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="secondary" size="default">
-                  <p>Language</p>
+                  <p>{t('nav.language')}</p>
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">

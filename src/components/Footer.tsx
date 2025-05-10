@@ -20,6 +20,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
           <div className="space-y-4">
             <h3 className="text-xl font-bold mb-4">FrontDesk<span className="text-frontdesk-800"> Solutions</span></h3>
+            <div className="flex items-center mb-4">
+              <img 
+                src="./footer.png" 
+                alt="Customer service representative" 
+                className="h-16 object-contain"
+              />
+            </div>
             <p className="text-frontdesk-100">
             {t('footer.desc')}
             </p>
