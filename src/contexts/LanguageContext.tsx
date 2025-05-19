@@ -91,6 +91,8 @@ const translations = {
     'contact.office': 'Büro',
     'contact.businessHours': 'Geschäftszeiten',
     'contact.businessHoursDetails': 'Montag - Freitag: 9:00 - 18:00 Uhr\nSamstag: 10:00 - 14:00 Uhr\nSonntag: Geschlossen',
+    'contact.thankYou': 'Vielen Dank für Ihre Kontaktaufnahme. Wir werden uns in Kürze mit Ihnen in Verbindung setzen...',
+    'contact.error': 'Technical error',
 
     //Footer Section
     'footer.desc':'Ihr Partner für exzellenten Nachtrezeptionsdienst!',
@@ -183,6 +185,8 @@ const translations = {
     'contact.office': 'Office',
     'contact.businessHours': 'Business Hours',
     'contact.businessHoursDetails': 'Monday - Friday: 9:00 AM - 6:00 PM\nSaturday: 10:00 AM - 2:00 PM\nSunday: Closed',
+    'contact.thankYou': 'Thank you for reaching us, we will contact you shortly...',
+    'contact.error': 'Technical error',
 
     //Footer Section
     'footer.desc':'Your partner for excellent night reception service!',
