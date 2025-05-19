@@ -69,9 +69,19 @@ const Navigation = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="#" className="flex items-center">
-              <span className="text-frontdesk-800 font-bold text-xl md:text-2xl">
-                FrontDesk<span className="text-frontdesk-600"> Solutions</span>
-              </span>
+              <img 
+                src="./logo4.png" 
+                alt="FrontDesk Nexus Logo" 
+                className="h-16 mr-3 object-contain" 
+              />
+              <div className="flex flex-col">
+                <span className="text-frontdesk-800 font-bold text-xl leading-tight">
+                  CONCIERGE
+                </span>
+                <span className="text-frontdesk-600 font-bold text-sm leading-tight">
+                  FRONT DESK SOLUTIONS
+                </span>
+              </div>
             </a>
           </div>
 

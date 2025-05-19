@@ -19,10 +19,26 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
           <div className="space-y-4">
-            <h3 className="text-xl font-bold mb-4">FrontDesk<span className="text-frontdesk-800"> Solutions</span></h3>
+            <div className="flex items-center">
+            <a href="#" className="flex items-center">
+              <img 
+                src="./logo4.png" 
+                alt="FrontDesk Nexus Logo" 
+                className="h-16 mr-3 object-contain" 
+              />
+              <div className="flex flex-col">
+                <span className="text-frontdesk-800 font-bold text-xl leading-tight">
+                  CONCIERGE
+                </span>
+                <span className="text-frontdesk-600 font-bold text-sm leading-tight">
+                  FRONT DESK SOLUTIONS
+                </span>
+              </div>
+            </a>
+          </div>
             <div className="flex items-center mb-4">
               <img 
-                src="./footer.png" 
+                src="./footer.jpg" 
                 alt="Customer service representative" 
                 className="h-16 object-contain"
               />
@@ -103,7 +119,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-frontdesk-600 mt-10 pt-6 text-center text-sm text-frontdesk-800">
-          <p>© {new Date().getFullYear()} FrontDesk Solutions. {t('footer.end')}.</p>
+          <p>© {new Date().getFullYear()} Concierge Front Desk Solutions. {t('footer.end')}.</p>
         </div>
       </div>
     </footer>

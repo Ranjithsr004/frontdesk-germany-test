@@ -23,14 +23,34 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success("Thank you for your message! We'll be in touch soon.");
+    // Validate form data
+    if (!formData.name || !formData.email || !formData.message) {
+      toast.error(t('contact.errorMessage') || "Please fill in all fields");
+      return;
+    }
+
+    try {
+      setIsSubmitting(true);
+      
+      const subject = `Contact Form Submission from ${formData.name}`;
+      const body = `
+        Name: ${formData.name}  
+        Email: ${formData.email}
+        Message:${formData.message}`;
+      
+      const mailtoLink = `mailto:info@frontdesknexus.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+      
+      toast.success(t('contact.thankYou'));
+      
       setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast.error(t('contact.errorMessage') || "Failed to send message. Please try again.");
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -119,16 +139,21 @@ const ContactSection = () => {
                   <Mail className="h-6 w-6 text-frontdesk-600 mr-4 mt-1" />
                   <div>
                     <h4 className="text-lg font-semibold text-gray-800">{t('contact.emailLabel')}</h4>
-                    <p className="text-gray-600">info@frontdesk.com</p>
-                    <p className="text-gray-600">support@frontdesk.com</p>
+                    <p className="text-gray-600">info@concierge.com.de</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Phone className="h-6 w-6 text-frontdesk-600 mr-4 mt-1" />
                   <div>
                     <h4 className="text-lg font-semibold text-gray-800">{t('contact.phoneLabel')}</h4>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-gray-600">+1 (555) 987-6543</p>
+                    <p className="text-gray-600">+4915143357981</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <Phone className="h-6 w-6 text-frontdesk-600 mr-4 mt-1" />
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-800">{t('contact.webLabel')}</h4>
+                    <p className="text-gray-600">www.concierge.com.de</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -136,13 +161,13 @@ const ContactSection = () => {
                   <div>
                     <h4 className="text-lg font-semibold text-gray-800">{t('contact.office')}</h4>
                     <p className="text-gray-600">
-                      1234 Business Avenue, Suite 500<br />
-                      San Francisco, CA 94107<br />
-                      United States
+                      Bodenseestraße 39, 78315<br />
+                      Radolfzell am Bodensee,<br />
+                      Germany
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <Clock className="h-6 w-6 text-frontdesk-600 mr-4 mt-1" />
                   <div>
                     <h4 className="text-lg font-semibold text-gray-800">{t('contact.businessHours')}</h4>
@@ -150,7 +175,7 @@ const ContactSection = () => {
                     {t('contact.businessHoursDetails')}
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

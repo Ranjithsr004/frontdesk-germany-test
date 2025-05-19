@@ -14,7 +14,7 @@ const HomeSection = () => {
           <div className="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold mb-6 text-frontdesk-800 leading-tight">
             {t('home.title')} <br />
-              <span className="text-frontdesk-700">{t('home.span')}</span> {t('home.cta')}
+              <span className="text-frontdesk-800">{t('home.span')}</span> {t('home.cta')}
             </h1>
             <p className="text-lg md:text-xl text-white mb-8 max-w-lg">
             {t('home.ctn')}
