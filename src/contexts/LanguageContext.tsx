@@ -14,7 +14,7 @@ const translations = {
     'nav.home': 'Heim',
     'nav.about': 'Über uns',
     'nav.services': 'Unsere Leistungen',
-    'nav.contact': 'KoKontaktieren Sie uns',
+    'nav.contact': 'Kontaktieren Sie uns',
     'nav.getStarted': 'Legen Sie los',
     'nav.language': 'Sprache',
     
@@ -99,7 +99,7 @@ const translations = {
     'footer.home': 'Heim',
     'footer.about': 'Über uns',
     'footer.services': 'Unsere Leistungen',
-    'footer.contact': 'KoKontaktieren Sie uns',
+    'footer.contact': 'Kontaktieren Sie uns',
     'footer.end': 'Alle Rechte vorbehalten',
 
   },

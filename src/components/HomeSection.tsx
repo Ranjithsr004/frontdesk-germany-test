@@ -50,7 +50,7 @@ const HomeSection = () => {
                   alt="Front Desk Management Software"
                   className="rounded-md shadow-md w-full h-auto object-cover"
                 />
-                <div className="absolute -bottom-6 -right-6 bg-white rounded-lg p-4 shadow-lg hidden md:block">
+                {/* <div className="absolute -bottom-6 -right-6 bg-white rounded-lg p-4 shadow-lg hidden md:block">
                   <div className="flex items-center">
                     <div className="mr-3">
                       <div className="text-frontdesk-800 font-bold text-xl">98%</div>
@@ -58,11 +58,11 @@ const HomeSection = () => {
                     </div>
                     <div className="h-10 w-px bg-gray-200 mx-2"></div>
                     <div>
-                      <div className="text-frontdesk-800 font-bold text-xl">5000+</div>
+                      <div className="text-frontdesk-800 font-bold text-xl">100+</div>
                       <div className="text-sm text-gray-500">{t('home.btn4')}</div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
