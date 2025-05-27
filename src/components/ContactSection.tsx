@@ -39,7 +39,7 @@ const ContactSection = () => {
         Email: ${formData.email}
         Message:${formData.message}`;
       
-      const mailtoLink = `mailto:info@frontdesknexus.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailtoLink = `mailto:info@concierge.com.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.location.href = mailtoLink;
       
       toast.success(t('contact.thankYou'));
@@ -146,7 +146,7 @@ const ContactSection = () => {
                   <Phone className="h-6 w-6 text-frontdesk-600 mr-4 mt-1" />
                   <div>
                     <h4 className="text-lg font-semibold text-gray-800">{t('contact.phoneLabel')}</h4>
-                    <p className="text-gray-600">+4915143357981</p>
+                    <p className="text-gray-600">+4915206652072</p>
                   </div>
                 </div>
                 <div className="flex items-start">

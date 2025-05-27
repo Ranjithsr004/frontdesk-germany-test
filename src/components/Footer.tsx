@@ -20,28 +20,38 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
           <div className="space-y-4">
             <div className="flex items-center">
-            <a href="#" className="flex items-center">
-              <img 
-                src="./logo4.png" 
-                alt="FrontDesk Nexus Logo" 
-                className="h-16 mr-3 object-contain" 
-              />
-              <div className="flex flex-col">
-                <span className="text-frontdesk-800 font-bold text-xl leading-tight">
-                  CONCIERGE
-                </span>
-                <span className="text-frontdesk-600 font-bold text-sm leading-tight">
-                  FRONT DESK SOLUTIONS
-                </span>
-              </div>
-            </a>
-          </div>
-            <div className="flex items-center mb-4">
-              <img 
-                src="./footer.jpg" 
-                alt="Customer service representative" 
-                className="h-16 object-contain"
-              />
+              <a href="#" className="flex items-center">
+                <img 
+                  src="./logo4.png" 
+                  alt="FrontDesk Nexus Logo" 
+                  className="h-16 mr-3 object-contain" 
+                />
+                <div className="flex flex-col">
+                  <span className="text-frontdesk-800 font-bold text-xl leading-tight">
+                    CONCIERGE
+                  </span>
+                  <span className="text-frontdesk-600 font-bold text-sm leading-tight">
+                    FRONT DESK SOLUTIONS
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div className="flex items-center">
+              <a href="#" className="flex items-center">
+                <img 
+                  src="./footer2.jpg" 
+                  alt="FrontDesk Nexus Logo" 
+                  className="h-16 mr-3 object-contain" 
+                />
+                <div className="flex flex-col">
+                  <span className="text-white text-lg leading-tight">
+                    {t('footer.txt1')}
+                  </span>
+                  <span className="text-white text-lg leading-tight">
+                    {t('footer.txt2')}
+                  </span>
+                </div>
+              </a>
             </div>
             <p className="text-frontdesk-100">
             {t('footer.desc')}

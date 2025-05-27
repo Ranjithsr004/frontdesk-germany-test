@@ -99,6 +99,8 @@ const translations = {
     'footer.home': 'Heim',
     'footer.about': 'Über uns',
     'footer.services': 'Unsere Leistungen',
+    'footer.txt1': 'Concierge ist eine Sparte der',
+    'footer.txt2': 'Ayyappa Innovations',
     'footer.contact': 'Kontaktieren Sie uns',
     'footer.end': 'Alle Rechte vorbehalten',
 
@@ -193,6 +195,8 @@ const translations = {
     'footer.home': 'Home',
     'footer.about': 'About Us',
     'footer.services': 'Our Services',
+    'footer.txt1': 'Concierge is a division of',
+    'footer.txt2': 'Ayyappa Innovations',
     'footer.contact': 'Contact Us',
     'footer.end': 'All rights reserved',
   }
